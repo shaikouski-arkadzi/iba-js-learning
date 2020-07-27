@@ -1,0 +1,29 @@
+#letter {
+    text-align: center;
+    font-family: Calibri;
+    font-size: 18pt;
+    font-weight: bold;
+}
+
+hr, h2 {
+    text-align: center;
+}
+
+#hello {
+    font-family: Segoe UI;
+}
+
+#poem {
+    font-family: Calibri;
+    font-style: italic;
+}
+
+#publisher {
+    font-weight: bold;
+}
+
+.csharp {
+    word-wrap: break-word;
+    margin-top: 0;
+    margin-bottom: 0;
+}

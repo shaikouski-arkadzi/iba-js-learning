@@ -1,0 +1,12 @@
+.first, .third {
+    font-size: 15px;
+}
+
+p {
+    color: blue;
+}
+
+.letters {
+    color: green;
+    font-size: 30px;
+}

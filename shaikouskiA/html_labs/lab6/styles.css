@@ -1,0 +1,12 @@
+.back {
+    /* background-image: url(nature.jpg); */
+    height: 1000px;
+    opacity: 50%;
+    /* background-color: brown; */
+    position: absolute;
+}
+
+img {
+    padding-left: 25px;
+    padding-top: 35px;
+}
