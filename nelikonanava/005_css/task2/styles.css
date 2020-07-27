@@ -1,0 +1,27 @@
+.style1 {
+    font-family: Calibri;
+    size: 20px;
+    color: green;
+    font-weight: bold;
+}
+
+.style2 {
+    font-family: Arial;
+    size: 15px;
+    color: blue;
+    font-style: italic;
+}
+
+.style3 {
+    font-family: Batang;
+    size: 20px;
+    color: brown;
+    font-style: italic;
+    font-weight: bold;
+}
+
+.style4 {
+    font-family: Andalus;
+    size: 30px;
+    color: teal;
+}
