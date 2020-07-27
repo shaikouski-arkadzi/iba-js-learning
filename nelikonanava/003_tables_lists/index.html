@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Таблицы и списки</title>
+    </head>
+<style>
+   table  {
+        width: 100%;
+   }
+   table, th, td {
+       border: 1px solid black;
+       border-collapse: collapse;
+   }
+       #t01 td{
+        text-align: center;
+    }
+   ul {
+       list-style-image: url("marker.jpg");
+   }
+</style>
+
+<body>
+<h2>1. Создайте таблицу на три колонки (имя  фамилия  возраст). Добавьте несколько строк и заполните их.
+    Выровняйте текст по центру ячеек. </h2>
+<table id="t01">
+        <tr>
+        <th>Имя</th>
+        <th>Фамилия</th>
+        <th>Возраст</th>
+    </tr>
+    <tr>
+        <td>Нелли</td>
+        <td>Кононова</td>
+        <td>39</td>
+    </tr>
+    <tr>
+        <td>Елена</td>
+        <td>Бурая</td>
+        <td>63</td>
+    </tr>
+    <tr>
+        <td>Валентина</td>
+        <td>Осипчик</td>
+        <td>82</td>
+    </tr>
+</table>
+
+
+    <h2>2. Создайте таблицу на три строки и три колонки. Объедините две первые ячейки первой строки. Объедините две последние ячейки третьей колонки. </h2>
+    <table>
+       <tr>
+            <td colspan="2">test</td>
+            <td>test</td>
+        </tr>
+        <tr>
+            <td>test</td>
+            <td>test</td>
+            <td rowspan="2">test</td>
+            </tr>
+        <tr>
+            <td>test</td>
+            <td>test</td>
+            </tr>
+    </table>
+
+    <h2>3. Создайте маркированный список со своими маркерами(где маркер – какое -то изображение). </h2>
+
+        <ul>
+            <li>Coffee</li>
+            <li>Tea</li>
+            <li>Milk</li>
+        </ul>
+
+
+
+</body>
+</html>
