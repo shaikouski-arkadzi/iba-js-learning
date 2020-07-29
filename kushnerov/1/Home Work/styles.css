@@ -1,0 +1,15 @@
+h1{
+    font-family:Calibri;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+}
+
+body{
+    font-family: Segoe UI;
+}
+
+#text-poem{
+    font-family: Calibri;
+    font-style: italic;
+}

@@ -1,0 +1,14 @@
+.backstyle {
+    opacity: 50%;
+    background: aquamarine;
+    }
+
+div {
+    position: absolute;
+    background: brown;
+}
+
+img {
+    padding-left: 25px;
+    padding-top: 35px;
+}

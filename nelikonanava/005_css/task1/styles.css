@@ -1,0 +1,12 @@
+p {
+    color:blue;
+    text-align: justify;
+    ;
+}
+p.newsize {
+    font-size: 30px;
+}
+span {
+    font-size: 40px;
+    color: green;
+}

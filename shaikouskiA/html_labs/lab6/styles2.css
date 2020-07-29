@@ -1,0 +1,9 @@
+.back {
+    width: 200px;
+    height: 200px;
+    background-color:green;
+    border-radius: 10px;
+    margin: auto;
+    vertical-align: middle;
+}
+

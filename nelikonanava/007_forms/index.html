@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Форма регистрации для сайта</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+<header>
+    <h2>Пройдите регистрацию</h2>
+</header>
+<form>
+<section>
+    <label for="fname">Введите имя:</label><br>
+    <input type="text" id="fname" name="fname"><br>
+    <label for="lname">Введите фамилию:</label><br>
+    <input type="text" id="lname" name="lname"><br><br>
+    <label for="datemax">Введите дату рождения (до 2020-07-28):</label>
+    <input type="date" id="datemax" name="datemax" max="2020-07-31"><br><br>
+    <p>Выберите пол:</p>
+    <input type="radio" id="male" name="gender" value="male">
+    <label for="male">Мужчина</label><br>
+    <input type="radio" id="female" name="gender" value="female">
+    <label for="female">Женщина</label><br><br>
+    <label for="fname">Введите имя пользователя:</label><br>
+    <input type="text" id="fname" name="fname"><br>
+    <label for="pwd">Введите пароль:</label><br>
+    <input type="password" id="pwd" name="pwd"><br>
+    <label for="pwd">Повторите пароль пароль:</label><br>
+    <input type="password" id="pwd" name="pwd">
+</section>
+
+<footer>
+    <button type="submit" class="registerbtn">Register</button>
+</footer>
+</form>
+
+</body>
+</html>

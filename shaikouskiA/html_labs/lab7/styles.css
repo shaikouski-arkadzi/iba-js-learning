@@ -1,0 +1,12 @@
+.reg_form, .log_form {
+    float: left;
+}
+
+.log_form {
+    margin-left: 100px;
+}
+
+.button {
+    text-align: center;
+}
+
