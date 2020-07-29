@@ -1,0 +1,12 @@
+ label {
+     padding: 10px;
+ }
+
+ .element {
+     height: 30px;
+     margin-left: 10px;
+ }
+
+ #submit {
+     float: right;
+ }

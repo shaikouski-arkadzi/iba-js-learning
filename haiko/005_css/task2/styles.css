@@ -1,0 +1,34 @@
+head {
+    font-family: 'Segoe UI';
+}
+
+h1 {
+    font-family: 'Calibri';
+    font-size: 18;
+    font-style: bold;
+    text-align: center;
+    padding: 25;
+}
+
+h3 {
+    margin-left: 85;
+}
+
+h5 {
+    font-style: bold;
+    margin-left: 85;
+}
+
+p {
+    font-family: Calibri;
+    margin-left: 7%;
+    margin-right: 7%;
+}
+
+ol {
+    margin-left: 7%;
+}
+
+.formula {
+    font-style: italic;
+}

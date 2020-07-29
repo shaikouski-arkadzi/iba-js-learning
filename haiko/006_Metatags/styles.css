@@ -1,0 +1,11 @@
+img {
+    margin-top: 35px;
+    margin-left: 25px;
+}
+div {
+    position: absolute;
+}
+.background{
+    opacity: 0.5;
+    background-color: greenyellow;
+}
