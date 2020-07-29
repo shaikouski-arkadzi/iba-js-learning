@@ -9,7 +9,7 @@ body{
     font-family: Segoe UI;
 }
 
-#text-poem{
+.text-poem{
     font-family: Calibri;
     font-style: italic;
 }
