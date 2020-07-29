@@ -1,0 +1,46 @@
+<html>
+
+<head>
+    <title>My Site </title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="header">
+        <input id="searchf" type="text" placeholder="Введите запрос" name="search">
+        <button id="searchb"></button> 
+    </div>
+    <div class="menu">
+        <button class="menu-button" onclick="#">Button 1</button>
+        <button class="menu-button" onclick="#">Button 2</button>
+        <button class="menu-button" onclick="#">Button 3</button>
+        <button class="menu-button" onclick="#">Button 4</button>
+        <button class="menu-button" onclick="#">Button 5</button>
+    </div>
+    <button class="open-button" onclick="openForm()">Открыть форму</button>
+    <div class="form-popup" id="myForm">
+        <form action="/action_page.php" class="form-container">
+            <h1>Логин</h1>
+
+            <label for="email"><b>Почта</b></label>
+            <input type="text" placeholder="Введите Почту" name="email" required>
+
+            <label for="psw"><b>Пароль</b></label>
+            <input type="password" placeholder="Введите Пароль" name="psw" required>
+
+            <button type="submit" class="btn">Логин</button>
+            <button type="submit" class="btn cancel" onclick="closeForm()">Закрыть</button>
+        </form>
+    </div>
+    <script>
+        function openForm() {
+            document.getElementById("myForm").style.display = "block";
+        }
+
+        function closeForm() {
+            document.getElementById("myForm").style.display = "none";
+        }
+    </script>
+</body>
+
+</html>
