@@ -14,7 +14,6 @@ _Be sure, that all tests are positive. That means you cannot catch any error in 
 ## Prepare and test
 
 - Install [Node.js](https://nodejs.org/en/)
-- Go to folder `quadratic-equation`
 - Run `npm install` in command line
 - Run `npm test` in command line
 - You will see the number of passing and failing tests
