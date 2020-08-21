@@ -1,0 +1,13 @@
+{
+  "name": "02",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha test.js"
+  },
+  "author": "",
+  "devDependencies": {
+    "mocha": "^5.0.1"
+  }
+}
