@@ -30,8 +30,6 @@ makeExchange(9999999)-- >
   };
 ```
 
-![Money Exchange](./images/money-exchange.jpg)
-
 ## Prepare and test
 
 - Install [Node.js](https://nodejs.org/en/)
