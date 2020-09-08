@@ -1,0 +1,34 @@
+*{
+    box-sizing: border-box;
+}
+
+.menu {
+
+}
+
+#btn-save {
+    display: inline-block;
+}
+
+h1 {
+    text-align: center;
+}
+
+#toolbar {
+    
+}
+
+#editor {
+    height: 500px;
+}
+
+.richtext {
+    margin-left: 10%;
+    width: 80%;
+}
+
+#btn-add_step {
+        margin-left: 10%;
+        margin-bottom: 20px;
+        display: none;
+}
