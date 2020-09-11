@@ -12,8 +12,11 @@ const result = {
 }
 
 function submitStep() {
-    result.steps.push(document.getElementsByTagName('p')[1].innerHTML);
-    document.getElementsByTagName('p')[1].textContent = '';
+    const content = document.getElementsByTagName('p')[1].innerHTML;
+
+    if(content && content !== '<br>') {
+    result.steps.push(content);
+    document.getElementsByTagName('p')[1].innerHTML = '';
     
     const node = document.createElement("li");
     node.innerHTML = result.steps[result.steps.length - 1];
@@ -21,6 +24,7 @@ function submitStep() {
 
     document.querySelector(DOMStrings.richtext).style.display = 'none';
     document.getElementById(DOMStrings.btnAdd).style.display = 'block';
+    }
 }
 
 function addStep() {
@@ -30,4 +34,5 @@ function addStep() {
 
 function saveInstruction() {
     result.name = 1;
+    console.log(result);
 }
