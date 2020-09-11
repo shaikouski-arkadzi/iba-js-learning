@@ -3,23 +3,33 @@ const DOMStrings = {
     btnAdd: 'btn-add_step',
     btnSubmit: 'btn-submit_step',
     editor: 'editor',
-    listSteps: 'list_steps'
+    listSteps: 'list_steps',
+    stepTitle: 'step_title'
 }
 
 const result = {
     name: '',
-    steps: []
+    steps: []    
 }
 
 function submitStep() {
+    const tit = document.getElementById(DOMStrings.stepTitle).value;
     const content = document.getElementsByTagName('p')[1].innerHTML;
+    console.log(tit);
 
-    if(content && content !== '<br>') {
-    result.steps.push(content);
+    if(content && content !== '<br>' && tit) {
+        
+        const step = {
+            title: tit,
+            body: content 
+        }
+    result.steps.push(step);
+
     document.getElementsByTagName('p')[1].innerHTML = '';
+    document.getElementById(DOMStrings.stepTitle).value = '';
     
     const node = document.createElement("li");
-    node.innerHTML = result.steps[result.steps.length - 1];
+    node.innerHTML = `${result.steps[result.steps.length - 1].title}: ${result.steps[result.steps.length - 1].body}`;
     document.getElementById(DOMStrings.listSteps).appendChild(node);
 
     document.querySelector(DOMStrings.richtext).style.display = 'none';
