@@ -13,6 +13,7 @@ const result = {
 
 function submitStep() {
     result.steps.push(document.getElementsByTagName('p')[1].innerHTML);
+    document.getElementsByTagName('p')[1].textContent = '';
     
     const node = document.createElement("li");
     node.innerHTML = result.steps[result.steps.length - 1];
