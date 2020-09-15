@@ -18,12 +18,11 @@ const result = {
 }
 
 function submitStep() {
-    const tit = document.getElementById(DOMStrings.stepTitle).value;
+    let tit = document.getElementById(DOMStrings.stepTitle).value;
+    tit = `<h3>${tit}</h3>`;
     const content = document.querySelector(DOMStrings.text).innerHTML;
-    console.log(document.querySelector(DOMStrings.text));
 
-    if(content && content !== '<br>' && tit) {
-        console.log(content);
+    if(content && content !== '<p><br></p>' && tit!='<h3></h3>') {
         const step = {
             title: tit,
             body: content 
@@ -34,9 +33,9 @@ function submitStep() {
     document.getElementById(DOMStrings.stepTitle).value = '';
     
     const node = document.createElement("li");
-    node.innerHTML = `${result.steps[result.steps.length - 1].title}: ${result.steps[result.steps.length - 1].body}`;
+    node.innerHTML = `<span>${result.steps[result.steps.length - 1].title}: ${result.steps[result.steps.length - 1].body}</span>`;
     document.getElementById(DOMStrings.listSteps).appendChild(node);
-
+ 
     document.querySelector(DOMStrings.richtext).style.display = 'none';
     document.getElementById(DOMStrings.btnAdd).style.display = 'block';
     }

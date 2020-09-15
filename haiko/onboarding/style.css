@@ -1,10 +1,8 @@
-*{
+* {
     box-sizing: border-box;
 }
 
-.menu {
-
-}
+.menu {}
 
 #btn-save {
     display: inline-block;
@@ -13,6 +11,15 @@
 h1 {
     text-align: center;
     display: inline-block;
+}
+
+h3 {
+    display: inline-block;
+}
+
+p {
+    margin-top: 1px;
+    margin-bottom: 1px;
 }
 
 .instruction_name {
@@ -27,9 +34,15 @@ h1 {
     display: none;
 }
 
-#toolbar {
-    
+#list_steps {
+    font-weight: bold;
 }
+
+#list_steps span {
+    font-weight: normal;
+}
+
+#toolbar {}
 
 #editor {
     height: 500px;
@@ -41,9 +54,9 @@ h1 {
 }
 
 #btn-add_step {
-        margin-left: 10%;
-        margin-bottom: 20px;
-        display: none;
+    margin-left: 10%;
+    margin-bottom: 20px;
+    display: none;
 }
 
 #change_instruction_name {
