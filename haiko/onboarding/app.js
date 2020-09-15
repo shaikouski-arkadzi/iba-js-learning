@@ -3,6 +3,7 @@ const DOMStrings = {
     btnAdd: 'btn-add_step',
     btnSubmit: 'btn-submit_step',
     editor: 'editor',
+    text: '.ql-editor',
     listSteps: 'list_steps',
     stepTitle: 'step_title',
     btnInstrName: 'change_instruction_name', 
@@ -18,17 +19,18 @@ const result = {
 
 function submitStep() {
     const tit = document.getElementById(DOMStrings.stepTitle).value;
-    const content = document.getElementsByTagName('p')[1].innerHTML;
+    const content = document.querySelector(DOMStrings.text).innerHTML;
+    console.log(document.querySelector(DOMStrings.text));
 
     if(content && content !== '<br>' && tit) {
-        
+        console.log(content);
         const step = {
             title: tit,
             body: content 
         }
     result.steps.push(step);
 
-    document.getElementsByTagName('p')[1].innerHTML = '';
+    document.querySelector(DOMStrings.text).innerHTML = '';
     document.getElementById(DOMStrings.stepTitle).value = '';
     
     const node = document.createElement("li");
