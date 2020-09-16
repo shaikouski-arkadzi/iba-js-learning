@@ -1,0 +1,39 @@
+<html>
+
+<head>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://cdn.jsdelivr.net/npm/froala-editor@3.1.0/css/froala_editor.pkgd.min.css" rel="stylesheet" type="text/css" />
+  <script src="app.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/froala-editor@3.1.0/js/froala_editor.pkgd.min.js"></script>
+</head>
+
+<body>
+
+  <div class="menu">
+    <button id="btn-save">Save</button>
+    <button id="btn-assign">Assign</button>
+    <button id="btn-copyl">Copy Link</button>
+  </div>
+
+  <h1 id="doctitle">Docname</h1>
+
+  <ol id='list_steps'></ol>
+
+  <button id='btn-add_step' onclick="addStep()">+</button>
+
+  <div id="textarea" style="display: none;">
+    <div id="editor">
+      <p id="maintext">Filler text</p>
+    </div>
+    <button id="btn-submit_step" onclick="submitStep()">Submit</button>
+  </div>
+
+  <script>
+    var froala = new FroalaEditor('#editor',{
+      paragraphFormat:{}
+    });
+  </script>
+
+</body>
+
+</html>
