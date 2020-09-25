@@ -68,11 +68,20 @@ document.getElementById(DOMStrings.btnSubmitInstrName).addEventListener('click',
     document.getElementById(DOMStrings.btnInstrName).style.display = 'inline-block';
 })
 
-function saveInstruction() {
+async function saveInstruction() {
 
     if(result.name === '') {
         result.name = document.getElementsByTagName('h1')[0].textContent;
     }
     const instruction = JSON.stringify(result);
     console.log(instruction);
+
+    try {
+        const response = await fetch(`http://localhost:8080/save`, {
+            method: 'POST', 
+            body: instruction
+        });
+    } catch (e) {
+        console.log(e);
+    }
 }
