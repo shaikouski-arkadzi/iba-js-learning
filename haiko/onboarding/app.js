@@ -69,6 +69,10 @@ document.getElementById(DOMStrings.btnSubmitInstrName).addEventListener('click',
 })
 
 function saveInstruction() {
-    result.name = 1;
-    console.log(result);
+
+    if(result.name === '') {
+        result.name = document.getElementsByTagName('h1')[0].textContent;
+    }
+    const instruction = JSON.stringify(result);
+    console.log(instruction);
 }
