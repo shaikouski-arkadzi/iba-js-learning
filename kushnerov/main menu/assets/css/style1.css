@@ -1,0 +1,92 @@
+* {
+    box-sizing: border-box;
+}
+
+.topnav {
+	overflow: hidden;
+}
+
+.topnav a {
+	float: left;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+
+}
+
+.topnav a:hover {
+	color: black;
+}
+
+.topnav a.active {
+
+}
+
+.topnav a.nonactive {
+	color: gray;
+}
+
+#btn-save {
+    display: inline-block;
+}
+
+h1 {
+    text-align: center;
+    display: inline-block;
+}
+
+h3 {
+    display: inline-block;
+}
+
+p {
+    margin-top: 1px;
+    margin-bottom: 1px;
+}
+
+.instruction_name {
+    text-align: center;
+}
+
+.instruction_change_name {
+    display: inline-block;
+}
+
+#instruction_name_input {
+    display: none;
+}
+
+#list_steps {
+    font-weight: bold;
+}
+
+#list_steps span {
+    font-weight: normal;
+}
+
+#toolbar {}
+
+#editor {
+    height: 500px;
+}
+
+.richtext {
+    margin-left: 10%;
+    width: 80%;
+}
+
+#btn-add_step {
+    margin-left: 10%;
+    margin-bottom: 20px;
+    display: none;
+}
+
+#change_instruction_name {
+    display: inline-block;
+    height: 20px;
+    width: 20px;
+}
+
+#btn-submit_instruction_name {
+    display: none;
+}

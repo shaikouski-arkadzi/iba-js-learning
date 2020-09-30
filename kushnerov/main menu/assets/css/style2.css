@@ -1,0 +1,13 @@
+*{
+    box-sizing: border-box;
+}
+
+#title{
+    text-align: center;
+}
+
+#btn-create{
+  border-radius: 15px;
+  width: 180px;
+  height: 40px;
+}
